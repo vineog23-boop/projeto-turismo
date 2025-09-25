@@ -1,10 +1,203 @@
-#page{
-  max-width: 1120px;
-  max-height: 3054px;
- margin-left: 80px;
- margin-right: 80px;
- margin-top: 88px;
- box-sizing: border-box;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#topo{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #E1624F;
+  margin: 8px 0 8px;
 }
 
+#conhecabusan{
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 40px;
+  line-height: 1.25;
+}
+#busan{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+  margin-top: 4px;
+  margin-bottom: 40px;
+}
+
+#tres-destinos-imperdiveis{
+  margin-top: 0px;
+
+}
+
+#tres-destinos-imperdiveis h3{
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+#tres-destinos-imperdiveis h2{
+  margin-bottom: 8px;
+
+}
+
+/* dentro de #tres-destinos-imperdiveis */
+#tres-destinos-imperdiveis p{ margin: 0; }
+#tres-destinos-imperdiveis p + p{ margin-top: 8px; }       /* entre p e p */
+#tres-destinos-imperdiveis p:last-of-type{ margin-bottom: 64px; } /* último p -> imagem */
+
+.bomparaum,
+.bomparadois{ margin-bottom: 48px; }
+
+#templo-haedong-yonggungsa h2{
+ margin-top: 20px;
+ margin-bottom: 4px;
+}
+
+
+#templo-beomeosa h2{
+ margin-top: 20px;
+ margin-bottom: 4px;
+}
+
+#parque-yongdusan h2{
+ margin-top: 20px;
+ margin-bottom: 4px;
+}
+
+#amantes{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color:#E1624F;
+  line-height: normal;
+}
+
+
+#page{
+max-width: 1120px;
+ margin:88px auto 0;
+ box-sizing: border-box;
+ padding: 0 24px;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: #F5F4F0;
+  font-size: 16px;
+  font-family:"Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+
+
+
+.bomparaum{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: blue;
+  padding-left: 0;
+  list-style-position: inside; 
+
+}
+
+.bomparadois{
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.bomparaum li::marker{ color:black }
+.casais::marker{       color:black; }
+.familias::marker{     color:black; }
+.orcamentos::marker{   color:black; }
+
+.casais{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #591B98;
+ 
+}
+
+.familias{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #E5245E;
+  
+}
+
+.orcamentos{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #E95E10;
+ 
+}
+
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+  
+
+
+li{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0C51A7;
+  line-height: normal;
+}
+
+/* linha divisória */
+.divider{
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  margin: 40px 0;   /* respiro acima e abaixo do traço */
+}
+
+
+
+/* bloco final */
+#fechamento{ margin: 32px 0; }
+.fechamento-texto{
+  max-width: 840px;      /* mais estreito que o container pra melhorar leitura */
+  margin: 0 auto 24px;   /* centraliza */
+  text-align: center;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* créditos */
+#creditos{
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin: 24px 0 48px;
+}
+#creditos .heart{ color: #E1624F; }
+
+/* === Imagens do conteúdo (hero + 3 destinos) === */
+#introducao > img,
+#tres-destinos-imperdiveis > img,
+#templo-haedong-yonggungsa > img,
+#templo-beomeosa > img,
+#parque-yongdusan > img{
+  display: block;
+  width: 100%;        /* ocupa a largura disponível do container */
+  height: 350px;      /* altura fixa igual ao Figma */
+  object-fit: cover;  /* preenche sem distorcer, corta com elegância */
+  border-radius: 28px;
+  margin: 0;          /* o espaçamento vem das regras que você já tem (40/64/48) */
+}
 
